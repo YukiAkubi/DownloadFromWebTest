@@ -23,6 +23,11 @@ namespace DownloadPage.Controllers
             return View();
         }
 
+        public IActionResult Download()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

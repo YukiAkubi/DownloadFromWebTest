@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Download";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>インストールするバージョンを選択してください。</p>
+
+<form asp-controller="Download" asp-action="DownloadApk" method="post">
+    <label for="version">バージョン選択:</label>
+    <select id="version" name="version">
+        <option value="1.0.0">ver1.0.0</option>
+        <option value="1.0.1">ver1.0.1</option>
+        <option value="1.1.0">ver1.1.0</option>
+    </select>
+
+    <br />
+
+    <button type="submit">ダウンロード</button>
+</form>
